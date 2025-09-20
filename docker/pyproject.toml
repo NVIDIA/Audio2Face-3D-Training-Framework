@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "audio2face-framework"
+version = "1.0.0"
+description = "Audio2Face-3D Training Framework"
+authors = ["NVIDIA"]
+
+[tool.poetry.dependencies]
+python = "~3.10.0"
+numpy = "1.26.0"
+scipy = "1.15.3"
+scikit-learn = "1.7.0rc1"
+SoundFile = "0.11.0"
+protobuf = "4.25.1"
+tensorboard = "2.14.0"
+onnx = "1.17.0"
+cupy-cuda12x = "13.5.1"
+torch = { url = "https://download.pytorch.org/whl/cu128/torch-2.7.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl" }
+torchaudio = { url = "https://download.pytorch.org/whl/cu128/torchaudio-2.7.1%2Bcu128-cp310-cp310-manylinux_2_28_x86_64.whl" }
+transformers = "4.52.3"
+praatio = "6.2.0"
+timm = "1.0.11"
+tqdm = "4.66.5"
+audiomentations = "0.40.0"
+
+[build-system]
+requires = ["poetry-core>=1.7.1"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,65 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Preprocessing",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/runners/run_preproc_debug.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Training",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/runners/run_train_debug.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Inference",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/runners/run_inference_debug.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Deployment",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/runners/run_deploy_debug.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
