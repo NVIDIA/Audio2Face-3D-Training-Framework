@@ -131,6 +131,10 @@ We provide the Audio2Face-3D Example Dataset as part of this framework.
 # Navigate to the datasets directory
 cd ~/audio2face/datasets
 
+# Make sure git LFS is installed
+sudo apt-get install -y git-lfs
+git lfs install
+
 # Clone Claire dataset in the datasets directory using https
 git clone https://huggingface.co/datasets/nvidia/Audio2Face-3D-Dataset-v1.0.0-claire
 
